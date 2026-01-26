@@ -1,3 +1,6 @@
 from django.shortcuts import render
+# health/views.py
+from django.http import HttpResponse
 
-# Create your views here.
+def test_view(request):
+    return HttpResponse("Health app is working")
